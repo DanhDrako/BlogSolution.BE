@@ -13,7 +13,7 @@ namespace BlogSolution.Data.Infrastructure
         Task<T> Update(T entity);
         Task<T> Delete(T entity);
         Task<T> Delete(int id);
-        Task<T> GetSingleById(int id);
+        Task<T> GetSingleById(Guid id);
         Task<T> GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null);
         Task<List<T>> GetAll(string[] includes = null);
         Task<List<T>> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null);

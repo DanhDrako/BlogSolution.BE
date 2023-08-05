@@ -15,27 +15,24 @@ namespace BlogSolution.Data.Entities
     public class UserEntity : CommonEntity
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         [Required]
         public string UserName { get; set; }
         [Required]
         public string Password { get; set; }
-        public string Email { get; set; }
-        public string Birthday { get; set; }
-        public string Phone { get; set; }
+        public string? Email { get; set; }
+        public string? Birthday { get; set; }
+        public string? Phone { get; set; }
         public Gender Gender { get; set; }
-        public string LinkFacebook { get; set; }
-
-        [Required]
+        public string? LinkFacebook { get; set; }
         public UserRole Role { get; set; }
-        public string Avatar { get; set; }
-        public string AvatarUploadType { get; set; }
-        public string AccessToken { get; set; }
+        public string? Avatar { get; set; }
+        public string? AvatarUploadType { get; set; }
+        public string? AccessToken { get; set; }
         public UserStatus Status { get; set; }
         public bool IsOnline { get; set; }
-        public string LastLogin { get; set; }
-        public string LastIp { get; set; }
+        public string? LastLogin { get; set; }
+        public string? LastIp { get; set; }
 
 
     }

@@ -17,8 +17,7 @@ namespace BlogSolution.Data.Entities
     public class CategoryEntity : CommonEntity
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         public string Name { get; set; }

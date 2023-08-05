@@ -13,8 +13,7 @@ namespace BlogSolution.Data.Entities
     public class PostEntity : CommonEntity
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [MaxLength(256)]

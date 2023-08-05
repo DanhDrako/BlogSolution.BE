@@ -49,7 +49,7 @@ namespace BlogSolution.Data.Infrastructure
             return entity;
         }
 
-        public async Task<T> GetSingleById(int id)
+        public async Task<T> GetSingleById(Guid id)
         {
             return await _dbSet.FindAsync(id);
         }
